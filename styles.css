@@ -1,9 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;  
+}
+
+img, a {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
 }
 
 body {
@@ -42,7 +49,6 @@ p{
 }
 
 button{
-    outline: none;
     color: #fafafa;
     background-color: var(--colorMix);
     border: none;
@@ -69,6 +75,79 @@ button{
     display: block;
     margin: 0 auto;
     border-radius: 10px;
+}
+
+#career {
+    margin-top: 7rem;
+}
+
+h2 {
+    font-family: var(--mainfont);
+    color:var(--fontColor);
+    font-weight: 600;
+    
+}
+
+.hr-line {
+    background-color: var(--colorMix);
+    height: 3px;
+    width: 4.5rem;
+}
+
+.title {
+    margin: 0 1.5rem 2.5rem;
+}
+
+.box{
+    width: 230px;
+    height: auto;
+    padding: 1rem;
+    color: var(--fontColor);
+    margin: 0 auto 2rem;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.box>p {
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+h3{
+    font-family: var(--mainfont);
+    font-weight: 600;
+    color: var(--fontColor);
+    line-height: 1.2;
+    width: 100px
+}
+
+.career-icon {
+    width: 2rem;
+    height: 2rem;
+    position: relative;
+    left: 4.5rem;
+}
+
+
+@media screen and (min-width: 530px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .box {
+        width: 240px;
+        margin: unset;
+    }
+
+    .career-icon {
+        left: 5rem;
+    }
+
+    h3 {
+        line-height: 1.3;
+    }
 }
 
 @media screen and (min-width: 760px) {
@@ -101,15 +180,36 @@ button{
         width: 331px;
         height: 466px;
     }
+
+    .title {
+        margin-left: 7rem;
+    }
+
+    h2{
+        font-size: 1.9rem;
+    }
+
+    .box{
+        padding: 1rem;
+        margin: 0 auto 2rem; 
+    }
+    
+    .box>p {
+        font-size: 14px;
+    }
+    
+    h3{
+        font-size: 1.3rem;
+    }
 }
 
 @media screen and (min-width: 950px) {
     .content{ 
-        width: 485px;
+        width: 500px;
     }
 
     h1{
-        font-size: 2.6rem;
+        font-size: 2.7rem;
     }
 
     #home-photo {
@@ -123,5 +223,30 @@ button{
     
     button{
         font-size: 15px;
+    }
+
+    .title {
+        margin-left: 3rem;
+    }
+
+    .box{
+        width: 270px;
+    }
+
+    .grid-container {
+        grid-template-columns: auto auto auto;
+        gap: 30px;
+    }
+
+    h2{
+        font-size: 2.2rem;
+    }
+
+    h3{
+        font-size: 1.6rem;
+    }
+
+    .career-icon {
+        left: 7rem;
     }
 }
