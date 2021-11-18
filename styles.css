@@ -183,6 +183,48 @@ h4 {
     margin-bottom: 4rem;
 }
 
+#techie{
+    margin-bottom: 2rem;
+    padding-top: 0;
+}
+
+#footer{
+    margin: 1rem;
+}
+
+
+ #footer p, #footer a{
+     font-size: 13px;
+ }
+
+ #author>p{
+     margin-bottom: -1.2rem;
+ } 
+
+ #media-icons {
+     margin-top: -0.8rem;
+ }
+
+ #media-icons>a>img {
+     width: 18px;
+     height: 18px;
+     margin-right: 0.4rem ;
+ }
+
+ #github {
+     width: 60px;
+     height: 60px;
+ }
+
+
+ #footer-links {
+     margin-top: 2rem;
+ }
+
+ #footer-links>a{
+     padding-right: 1rem;
+ }
+
 @media screen and (min-width: 530px) {
     .grid-container, .article-container {
         display: grid;
@@ -284,6 +326,20 @@ h4 {
     
     .read-more {
         font-size: 13px;
+    }
+
+    #footer{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    #footer-links {
+        margin-top: unset;
+    }
+
+    #techie>p, #footer-links>a {
+        font-size: 14px;
     }
 
 @media screen and (min-width: 950px) {
