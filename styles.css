@@ -69,7 +69,7 @@ button{
     color: var(--colorMix);
 }
 
-#home-photo {
+.home-photo {
     width: 250px;
     height: 350px;
     display: block;
@@ -95,7 +95,9 @@ h2 {
 }
 
 .title {
-    margin: 0 1.5rem 2.5rem;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
 }
 
 .box{
@@ -107,7 +109,7 @@ h2 {
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
-.box>p {
+.box>p{
     font-size: 13px;
     line-height: 1.5;
 }
@@ -127,6 +129,22 @@ h3{
     left: 4.5rem;
 }
 
+#about {
+    margin-top: 5rem;
+}
+
+#about p {
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.inner-about {
+    margin: 0 1.5rem;
+}
+
+#about-photo {
+    margin-top: 3.5rem;
+}
 
 @media screen and (min-width: 530px) {
     .grid-container {
@@ -176,13 +194,10 @@ h3{
         margin: 1.8rem 0;
     }
 
-    #home-photo {
+    .home-photo {
         width: 331px;
         height: 466px;
-    }
-
-    .title {
-        margin-left: 7rem;
+        margin: unset;
     }
 
     h2{
@@ -201,10 +216,24 @@ h3{
     h3{
         font-size: 1.3rem;
     }
-}
+
+    #about-photo {
+        margin-top: unset;
+    }
+
+    .wrapper {
+        display: flex;
+        justify-content: space-evenly;
+        height: 100vh;
+        align-items: center;    }
+    }
+
+    .inner-about {
+        width: 400px;
+    }
 
 @media screen and (min-width: 950px) {
-    .content{ 
+    .content, .inner-about {
         width: 500px;
     }
 
@@ -212,7 +241,7 @@ h3{
         font-size: 2.7rem;
     }
 
-    #home-photo {
+    .home-photo {
         width: 400px;
         height: 560px;
     }
@@ -223,10 +252,6 @@ h3{
     
     button{
         font-size: 15px;
-    }
-
-    .title {
-        margin-left: 3rem;
     }
 
     .box{
@@ -248,5 +273,9 @@ h3{
 
     .career-icon {
         left: 7rem;
+    }
+
+    #about p {
+        font-size: 16px;
     }
 }
