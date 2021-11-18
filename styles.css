@@ -107,6 +107,7 @@ h2 {
     color: var(--fontColor);
     margin: 0 auto 2rem;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    background-color: #fff;
 }
 
 .box>p{
@@ -130,7 +131,7 @@ h3{
 }
 
 #about {
-    margin-top: 5rem;
+    margin: 5rem 0;
 }
 
 #about p {
@@ -146,8 +147,44 @@ h3{
     margin-top: 3.5rem;
 }
 
+.article-box {
+    height: 25rem;
+    width: 240px;
+    margin:0 auto 2rem;
+    background-color: #fff;
+    border-radius: 7px;
+}
+
+.article-box>div{
+    padding: 1rem;
+}
+
+.article-box img {
+    width: inherit;
+    height: 14rem;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+
+h4 {
+    font-family: var(--mainfont);
+    font-size: 1.2rem;
+    color: var(--fontColor);
+}
+
+.read-more {
+    color:var(--colorMix);
+    font-size: 12px;
+    position: relative;
+    bottom: -26px;
+}
+
+#articles {
+    margin-bottom: 4rem;
+}
+
 @media screen and (min-width: 530px) {
-    .grid-container {
+    .grid-container, .article-container {
         display: grid;
         grid-template-columns: auto auto;
         justify-content: center;
@@ -232,6 +269,23 @@ h3{
         width: 400px;
     }
 
+    .article-box {
+        height: 27rem;
+        width: 260px;
+    }
+
+    .article-box img {
+        height: 16rem;
+    }
+
+    h4 {
+        font-size: 1.4rem;
+    }
+    
+    .read-more {
+        font-size: 13px;
+    }
+
 @media screen and (min-width: 950px) {
     .content, .inner-about {
         width: 500px;
@@ -258,7 +312,7 @@ h3{
         width: 270px;
     }
 
-    .grid-container {
+    .grid-container, .article-container {
         grid-template-columns: auto auto auto;
         gap: 30px;
     }
@@ -277,5 +331,21 @@ h3{
 
     #about p {
         font-size: 16px;
+    }
+
+    .article-box {
+        height: 29rem;
+        width: 280px;
+    }
+
+    .article-box img {
+        height: 16rem;
+
+    }
+    
+    .read-more {
+        color:var(--colorMix);
+        font-size: 13px;
+    
     }
 }
