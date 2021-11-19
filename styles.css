@@ -5,7 +5,7 @@
     box-sizing: border-box;  
 }
 
-img, a {
+img, a, button{
     cursor: pointer;
 }
 
@@ -23,6 +23,26 @@ body {
     --colorMix: #fb5607;
     --mainWhite: #fafafa;
 }
+
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+    }
+    
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+    background: var(--colorMix); 
+    }
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+    background: var(--colorMix); 
+    }
 
 .flex {
     display: flex;
@@ -155,6 +175,22 @@ h2 {
     background-color: #fff;
 }
 
+.right-arrow {
+    background-color: var(--colorMix);
+    height: 2rem;
+    width: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 10.5rem;
+}
+
+.right-arrow> img {
+    width: 30px;
+    height: 30px;
+}
+
 .box>p{
     font-size: 13px;
     line-height: 1.5;
@@ -194,7 +230,7 @@ h3{
 }
 
 .article-box {
-    height: 25rem;
+    height: 21rem;
     width: 240px;
     margin:0 auto 2rem;
     background-color: #ffffff;
@@ -208,7 +244,7 @@ h3{
 
 .article-box img {
     width: inherit;
-    height: 14rem;
+    height: 12rem;
     border-top-left-radius: 7px;
     border-top-right-radius: 7px;
 }
@@ -223,7 +259,7 @@ h4 {
     color:var(--colorMix);
     font-size: 12px;
     position: relative;
-    bottom: -26px;
+    bottom: -8px;
 }
 
 #articles {
@@ -336,6 +372,10 @@ footer {
         font-size: 14px;
     }
     
+    .right-arrow {
+        left: 11rem;
+    }
+
     h3{
         font-size: 1.3rem;
     }
@@ -371,12 +411,12 @@ footer {
     }
 
     .article-box {
-        height: 27rem;
+        height: 24rem;
         width: 260px;
     }
 
     .article-box img {
-        height: 16rem;
+        height: 14rem;
     }
 
     h4 {
@@ -385,6 +425,7 @@ footer {
     
     .read-more {
         font-size: 13px;
+        bottom: -1px;
     }
 
     footer>div{
@@ -436,6 +477,10 @@ footer {
         width: 280px;
     }
 
+    .right-arrow {
+        left: 13rem;
+    }
+
     .grid-container, .article-container {
         grid-template-columns: auto auto auto;
         gap: 30px;
@@ -458,7 +503,7 @@ footer {
     }
 
     .article-box {
-        height: 29rem;
+        height: 26rem;
         width: 280px;
     }
 
