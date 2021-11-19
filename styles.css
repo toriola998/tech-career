@@ -15,6 +15,7 @@ a {
 
 body {
     background-color: #fafafa;
+    overflow-x:hidden ;
 }
 
 :root {
@@ -24,25 +25,11 @@ body {
     --mainWhite: #fafafa;
 }
 
-/* width */
-::-webkit-scrollbar {
-    width: 8px;
-    }
-
-    /* Track */
-    ::-webkit-scrollbar-track {
-    background: #f1f1f1; 
-    }
-    
-    /* Handle */
-    ::-webkit-scrollbar-thumb {
-    background: var(--colorMix); 
-    }
-
-    /* Handle on hover */
-    ::-webkit-scrollbar-thumb:hover {
-    background: var(--colorMix); 
-    }
+.gs_reveal {
+    opacity: 0;
+    visibility: hidden;
+    will-change: transform, opacity;
+  }
 
 .flex {
     display: flex;
@@ -263,9 +250,8 @@ h4 {
 }
 
 #articles {
-    margin-bottom: 4rem;
+    margin-bottom: 6rem;
 }
-
 
 footer {
     background-color: var(--fontColor);
@@ -274,7 +260,7 @@ footer {
 
  footer p, footer a{
     font-size: 13px;
-    color: var(--mainWhite)
+    color: #e4e4e4;
  }
 
  .author {
