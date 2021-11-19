@@ -19,7 +19,3 @@ navLinks.forEach(link => {
     links.classList.remove('show-links');
   }); 
 });
-
-//Update the copyright year automatically
-//const date = document.getElementById("date");
-//date.innerHTML = new Date().getFullYear();
