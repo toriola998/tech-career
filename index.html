@@ -18,6 +18,19 @@
                 <p>newbie</p>
                 <img src="./assets/icons/menu.svg" alt="menu" id="hamburger"/>
             </div>
+
+            <nav>
+                <div>
+                    <img src="./assets/icons/close-menu.svg" alt="close-icon" id="close-icon" />
+                    <ul class="nav-items">
+                        <li><a class="nav-link">Home</a></li>
+                        <li><a class="nav-link">Careers</a></li>
+                        <li><a class="nav-link">Learn more</a></li>
+                        <li><a class="nav-link">Articles</a></li>
+                    </ul>
+                </div> 
+            </nav>
+
             <div class="flex-tab">
                 <div class="content">
                     <div>
@@ -228,35 +241,42 @@
             </section>
 
             <footer>
-                <div id="footer">
-                    <div id="techie">
+                <div>
+                    <div class="footer-description">
                         <a href="#home-page">
-                            <p id="logo">novatos</p>
+                            <p>novatos</p>
                         </a>
-                        <p>ipsum dolor sit amet, consec</p>
+                        <p>Everything you need to start a career in tech. 
+                            Create your own path and drive on your skills 
+                            to achieve what you seek.</p>
+                    </div>
+                    
+                    <div class="author">
+                        <div>
+                            <p>Curated by</p>
+                            <h6>Toriola Faidat O.</h6>
+                        </div>
+                    
+                        <div class="media-icons">
+                            <a href="https://twitter.com/FaidatToriola">
+                                <img src="./assets/footerIcons/twitter.svg"/></a>
+                            <a href="https://www.linkedin.com/in/faidat-toriola-7b672021a/">
+                                <img src="./assets/footerIcons/linkedin.svg"/></a>
+                            <a href="mailto: faaedah@gmail.com">
+                                <img src="./assets/footerIcons/gmail.svg"/></a>
+                            <a href="https://github.com/toriola998">
+                                <img src="./assets/footerIcons/github.svg" id="github"> </a>
+                        </div>
                     </div>
                     
                     <div>
-                        <div id="author">
-                            <p>Curated by</p>
-                            <p>Toriola Faidat O.</p>
-                        </div>
-                    
-                        <div id="media-icons">
-                            <a href="https://twitter.com/FaidatToriola"><img src="./../assets/footerIcons/twitter.svg"/></a>
-                            <a href="https://www.linkedin.com/in/faidat-toriola-7b672021a/"><img src="./../assets/footerIcons/linkedin.svg"/></a>
-                            <a href="mailto: faaedah@gmail.com"><img src="./../assets/footerIcons/gmail.svg"/></a>
-                            <a href="https://github.com/toriola998"><img src="./../assets/footerIcons/github.svg" id="github"> </a>
-                        </div>
-                    </div>
-                    
-                    <div id="footer-links">
-                        <router-link to="/open-source">Open source</router-link>
-                        <a>Support</a>
-                        <a>About</a>
+                        <li><a>Open source</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Careers</a></li>
                     </div>
                 </div>
             </footer>
         </main>
+        <script src="./index.js"></script>
     </body>
 </html>

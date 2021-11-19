@@ -21,6 +21,7 @@ body {
     --mainfont: 'Poppins', sans-serif;
     --fontColor: #111010;
     --colorMix: #fb5607;
+    --mainWhite: #fafafa;
 }
 
 .flex {
@@ -31,6 +32,50 @@ body {
     justify-content: space-between;
     padding: 1rem;
 }
+
+.show-links {
+    position: fixed;
+    z-index: 9999;
+    height: 100vh;
+    width: 60vw;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba( 244, 234, 229, 0.5 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 20px );
+    -webkit-backdrop-filter: blur( 20px );
+  }
+  
+  #close-icon {
+      position: absolute;
+      top: 0;
+      right: 0;
+      margin: 1rem;
+  }
+
+  nav {
+    overflow: hidden;
+    height: 0;
+    position: relative;
+  }
+  
+  li {
+    list-style-type: none;
+    padding-bottom: 0.5rem;
+  }
+  
+  li > a {
+    color: #000;
+    font-size: 15px;
+    font-family: var(--mainfont);
+  }
+
+  li> a:hover {
+      border-bottom: 2px solid var(--colorMix);
+  }
 
 h1 {
     font-family: var(--mainfont);
@@ -49,7 +94,7 @@ p{
 }
 
 button{
-    color: #fafafa;
+    color: var(--mainWhite);
     background-color: var(--colorMix);
     border: none;
     font-family: var(--mainfont);
@@ -101,7 +146,7 @@ h2 {
 }
 
 .box{
-    width: 230px;
+    width: 240px;
     height: auto;
     padding: 1rem;
     color: var(--fontColor);
@@ -141,6 +186,7 @@ h3{
 
 .inner-about {
     margin: 0 1.5rem;
+    width: auto;
 }
 
 #about-photo {
@@ -151,8 +197,9 @@ h3{
     height: 25rem;
     width: 240px;
     margin:0 auto 2rem;
-    background-color: #fff;
+    background-color: #ffffff;
     border-radius: 7px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
 .article-box>div{
@@ -183,47 +230,44 @@ h4 {
     margin-bottom: 4rem;
 }
 
-#techie{
-    margin-bottom: 2rem;
-    padding-top: 0;
+
+footer {
+    background-color: var(--fontColor);
+    padding: 2rem 1.5rem;
 }
 
-#footer{
-    margin: 1rem;
-}
-
-
- #footer p, #footer a{
-     font-size: 13px;
+ footer p, footer a{
+    font-size: 13px;
+    color: var(--mainWhite)
  }
 
- #author>p{
-     margin-bottom: -1.2rem;
- } 
-
- #media-icons {
-     margin-top: -0.8rem;
+ .author {
+     margin: 2.5rem 0;
  }
 
- #media-icons>a>img {
-     width: 18px;
-     height: 18px;
-     margin-right: 0.4rem ;
+ .author p {
+    margin: unset;
  }
 
- #github {
-     width: 60px;
-     height: 60px;
+ footer li {
+     padding: unset;
  }
 
-
- #footer-links {
-     margin-top: 2rem;
+ footer img {
+     width: 20px;
+     margin-right: 0.5rem;
  }
 
- #footer-links>a{
-     padding-right: 1rem;
+ .media-icons {
+     margin-top: 0.3rem;
  }
+ h6 {
+    color: var(--mainWhite);
+    font-family: var(--mainfont);
+    font-size: 1.6rem;
+    font-weight: 300;
+ }
+
 
 @media screen and (min-width: 530px) {
     .grid-container, .article-container {
@@ -234,7 +278,7 @@ h4 {
     }
 
     .box {
-        width: 240px;
+        width: 250px;
         margin: unset;
     }
 
@@ -304,11 +348,26 @@ h4 {
         display: flex;
         justify-content: space-evenly;
         height: 100vh;
-        align-items: center;    }
+        align-items: center;    
     }
 
-    .inner-about {
-        width: 400px;
+    #close-icon, #hamburger {
+        display: none;
+    }
+
+    nav {
+        overflow: visible;
+    }
+
+    li {
+        padding-right: 1.2rem;
+    }
+
+    ul {
+        display: flex;
+        position: absolute;
+        right: 3rem;
+        bottom: 4rem;
     }
 
     .article-box {
@@ -328,19 +387,28 @@ h4 {
         font-size: 13px;
     }
 
-    #footer{
+    footer>div{
         display: flex;
         justify-content: space-evenly;
         align-items: center;
     }
 
-    #footer-links {
-        margin-top: unset;
+    .footer-description {
+        width: 250px;
     }
 
-    #techie>p, #footer-links>a {
+    footer p, footer a {
         font-size: 14px;
     }
+
+    footer{
+        padding-top: 3rem;
+    }
+
+    footer li{
+        margin-bottom: 0.5rem;
+    }
+}
 
 @media screen and (min-width: 950px) {
     .content, .inner-about {
@@ -365,7 +433,7 @@ h4 {
     }
 
     .box{
-        width: 270px;
+        width: 280px;
     }
 
     .grid-container, .article-container {
@@ -403,5 +471,21 @@ h4 {
         color:var(--colorMix);
         font-size: 13px;
     
+    }
+
+    footer{
+        padding-top: 4rem;
+    }
+
+    li {
+        padding-right: 3rem;
+    }
+
+    .footer-description {
+        width: 350px;
+    }
+
+    footer p, footer a {
+        font-size: 15px;
     }
 }
