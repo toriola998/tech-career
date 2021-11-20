@@ -108,7 +108,10 @@ div{
      list-style-type: circle;
      color: var(--colorMix);
  }
- 
+
+ .lists, .list-item> a {
+     color:var(--paragraphFont);
+ }
  
   @media screen and (min-width: 700px) {
      main{
