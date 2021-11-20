@@ -109,6 +109,10 @@ div{
      color: var(--colorMix);
  }
 
+ .lists{
+     list-style-type: disc;
+ }
+ 
  .lists, .list-item> a {
      color:var(--paragraphFont);
  }
