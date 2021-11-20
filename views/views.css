@@ -111,8 +111,9 @@ div{
 
  .lists{
      list-style-type: disc;
+     font-size: 18px;
  }
- 
+
  .lists, .list-item> a {
      color:var(--paragraphFont);
  }
