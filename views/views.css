@@ -12,6 +12,14 @@
     --colorMix: #e63a18;
 }
 
+.mb-1 {
+    margin-bottom: 1.3rem;
+}
+
+.mt-2 {
+    margin-top: 2rem;
+}
+
 /* width */
 ::-webkit-scrollbar {
     width: 8px;
