@@ -14,7 +14,7 @@ a {
 }
 
 body {
-    background-color: #fafafa;
+    background-color: var(--mainWhite);
     overflow-x:hidden ;
 }
 
@@ -37,7 +37,7 @@ body {
 .show-links {
     position: fixed;
     z-index: 9999;
-    height: 100vh;
+    height: 100%;
     width: 60vw;
     top: 0;
     right: 0;
@@ -51,9 +51,8 @@ body {
   
   #close-icon {
       position: absolute;
-      top: 0;
-      right: 0;
-      margin: 1rem;
+      top: 1rem;
+      right: 1rem;
   }
 
   nav {
@@ -130,7 +129,6 @@ h2 {
     font-family: var(--mainfont);
     color:var(--fontColor);
     font-weight: 600;
-    
 }
 
 .hr-line {

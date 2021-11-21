@@ -20,4 +20,3 @@ navLinks.forEach(link => {
   }); 
 });
 
-AOS.init();
