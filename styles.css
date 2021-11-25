@@ -369,7 +369,11 @@ footer {
         display: flex;
         justify-content: space-evenly;
         height: 100vh;
-        align-items: center;    
+        align-items: center;  
+    }
+
+    .reverse-about {
+        flex-direction: row-reverse; 
     }
 
     #close-icon, #hamburger {
@@ -429,6 +433,10 @@ footer {
 
     footer li{
         margin-bottom: 0.5rem;
+    }
+
+    .inner-about{
+        width: 350px;
     }
 }
 
