@@ -18,7 +18,7 @@
 - Push your changes:  `git push origin <branch-name>`
 - Make a PR on Github; use a descriptive PR title to specify the change(s) made.
 - Any contribution is appreciated, including grammar corrections, broken link fixes, resource additions, and so on.
-- Before you contribute, please read our [CODE OF CONDUCT](./CODE-OF-CONDUCT.md), which must be followed.
+- Before you contribute, please read our [CODE OF CONDUCT](./CODE_OF_CONDUCT.md), which must be followed.
 - Kindly check that the resource(s) you want to add aren't already in the repo, as yours could be a duplicate.
 - Use the `[Title Case Name](link)` format.
 - Make use concise descriptions.
