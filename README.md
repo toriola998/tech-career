@@ -21,7 +21,7 @@ and `contributing.md` files so you can be on the right path.
 If you do not code, you can also contribute [https://docs.google.com/forms/d/1yVTL2T6aZEdLUpMpeizI0IHLYU8eo8OZJVZRyy7YkIg/](here), or check the overview of this profile to contact me anything.
 
 
-- Live Site URL: [https://tech-career.netlify.app/](https://your-live-site-url.com)
+- Live Site URL: [https://tech-career.netlify.app/](https://tech-career.netlify.app/)
 
 
 
