@@ -117,10 +117,6 @@ header{
     margin: 3rem 0;
 }
 
-/*#guide{
-    color: #8338ec;
-}*/
-
 #tech {
     color: var(--colorMix);
 }
@@ -261,7 +257,7 @@ h4 {
 
 footer {
     background-color: var(--fontColor);
-    padding: 2rem 1.5rem;
+    padding: 2rem 1.5rem 4rem;
 }
 
  footer p, footer a{
