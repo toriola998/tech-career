@@ -17,6 +17,8 @@
 - Commit all the changes (use descriptive commit messages): git commit -m "a descriptive commit message"
 - Push your changes:  `git push origin <branch-name>`
 - Make a PR on Github; use a descriptive PR title to specify the change(s) made.
+- Always attach to your PR, a picture of the UI changes you made. 
+- Ensure to follow the template of the repository when making additions. 
 - Any contribution is appreciated, including grammar corrections, broken link fixes, resource additions, and so on.
 - Before you contribute, please read our [CODE OF CONDUCT](./CODE_OF_CONDUCT.md), which must be followed.
 - Kindly check that the resource(s) you want to add aren't already in the repo, as yours could be a duplicate.
