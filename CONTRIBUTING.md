@@ -1,15 +1,15 @@
 # CONTRIBUTION GUIDELINES
 
 - Fork the repo
-- Open your terminal and clone it on your machine:  
-  ```
+- Open your terminal and clone it on your machine:
+```
   git clone https://github.com/toriola998/tech-career.git
-  ```
-- Add an upstream link to the main branch in your cloned repo: 
+```
+- Add an upstream link to the main branch in your cloned repo:
   ```
   git remote add upstream https://github.com/toriola998/tech-career.git
   ```
-- Keep your cloned repo up to date by pulling from upstream (to avoid any merge conflicts while committing new changes): 
+- Keep your cloned repo up to date by pulling from upstream (to avoid any merge conflicts while committing new changes):
   ```
   git pull upstream main
   ```
