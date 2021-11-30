@@ -18,6 +18,8 @@
 - Push your changes:  `git push origin <branch-name>`
 - Make a PR on Github; use a descriptive PR title to specify the change(s) made.
 - Always attach to your PR, a picture of the UI changes you made. 
+- All resources should be as sequential as possible. For instance, only HTML, CSS and Javascript resource are allowed as frontend resource, not only CSS, or only Javascript; then only python + django resource will be allowed, not only django. We have to keep in mind that the users of this website are new and have no knowledge of the sequence of learning these skills. 
+- All resources should be as specific as possible, only the responsive web design part of freecodecamp should be added as a resource link to frontend development, not the whole site. Only specific resources would be approved.
 - Ensure to follow the template of the repository when making additions. 
 - Any contribution is appreciated, including grammar corrections, broken link fixes, resource additions, and so on.
 - Before you contribute, please read our [CODE OF CONDUCT](./CODE_OF_CONDUCT.md), which must be followed.
