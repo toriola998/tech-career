@@ -573,3 +573,16 @@ footer {
         font-size: 15px;
     }
 }
+
+@media screen and (min-width: 1440px){
+    header, 
+    section,
+    footer>div {
+        max-width: 1320px;
+        margin: auto !important;
+    }
+
+    #articles {
+        padding-bottom: 15rem;
+    }
+}
