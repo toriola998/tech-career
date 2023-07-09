@@ -1,0 +1,24 @@
+{
+  "name": "tech-career",
+  "version": "1.0.0",
+  "description": "![Design preview for the Space tourism website coding challenge](./assets/screenshot.png)",
+  "main": "index.js",
+  "scripts": {
+    "build": "tailwindcss -i ./css/tailwind.css -o ./css/main.css",
+    "watch": "tailwindcss -i ./css/tailwind.css -o ./css/main.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/toriola998/tech-career.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/toriola998/tech-career/issues"
+  },
+  "homepage": "https://github.com/toriola998/tech-career#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.3.2"
+  }
+}
