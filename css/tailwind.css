@@ -22,4 +22,7 @@ a {
     --mainWhite: #fafafa;
 }
 
-
+.career {
+    border: 1px solid #d2dfff;
+    @apply bg-light-1 rounded-2xl;
+}
