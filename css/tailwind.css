@@ -2,12 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;  
+    box-sizing: border-box; 
+    font-family: 'Poppins', sans-serif; 
 }
 
 a {
@@ -21,9 +22,4 @@ a {
     --mainWhite: #fafafa;
 }
 
-body {
-    background-color: var(--mainWhite);
-    overflow-x :hidden;
-    font-family: 'Poppins', sans-serif;
-}
 
